@@ -97,7 +97,7 @@ namespace BlobBusiness
             {
                 if (ex.RequestInformation.HttpStatusCode == (int)System.Net.HttpStatusCode.PreconditionFailed)
                 {
-                    throw new Exception("Precondition failure. Blob's orignal etag no longer matches");
+                    throw new Exception("Precondition failure. Blob's orignal etag no longer the same");
                 }
                 else throw;
             }
